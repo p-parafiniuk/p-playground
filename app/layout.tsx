@@ -1,5 +1,5 @@
 // To layout you put all the elements you does not want to be changed when route will change
-
+// Rule: layouts always inherit from the nearest ancestor
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
