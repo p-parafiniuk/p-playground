@@ -1,10 +1,12 @@
 'use client';
 import { useEffect } from 'react';
 
+// console.log("navigator.standalone", navigator.standalone);
+
 export function SWRegister() {
     useEffect(() => {
         navigator.serviceWorker
-            ?.register('/serviceworker.js')
+            ?.register('/serviceworker.js', { type: 'module' })
             .then((r) => console.log('SW zarejestrowany, scope:', r.scope))
             .catch((e) => console.error('SW błąd:', e));
     }, []);

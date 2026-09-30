@@ -3,7 +3,7 @@ console.log("Service worker loaded");
 globalThis.addEventListener('fetch', (event) => {
     console.log("Fetch event intercepted:", event);
     // console.log("Fetch event intercepted:", event.request.url);
-    event.respondWith(new Response("Service worker intercepted this request"));
+    // event.respondWith(new Response("Service worker intercepted this request"));
 });
 
 // alert("Service worker loaded");
